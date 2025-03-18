@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "./navbar";
-import {SiLinkedin, SiGithub} from "react-icons/si"
+import {SiLinkedin, SiGithub} from "react-icons/si" // Import social media icons
 
 export default function Home() {
   return (

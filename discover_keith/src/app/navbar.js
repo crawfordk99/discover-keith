@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     
     return (
-        <nav className="bg-gray-900 text-white shadow-md">
+        <nav className="flex justify-center bg-gray-900 text-white shadow-md">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
   
           {/* Mobile Menu Button */}
