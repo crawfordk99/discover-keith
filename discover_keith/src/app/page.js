@@ -1,9 +1,19 @@
 import Image from "next/image";
-import React from 'react';
+import Navbar from "./navbar";
+import {SiLinkedin, SiGithub} from "react-icons/si"
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <header className = "flex flex-col gap-[32px] items-center">
+        <Image
+          className = "dark:invert"
+          src = "/sawyer-bengtson.jpg"
+          alt = "Chicago from the Millenium Bean"
+          width = {250}
+          height = {45}
+        />
+      </header>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -74,13 +84,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
+          <SiLinkedin/>
           My LinkedIn
         </a>
         <a
@@ -89,13 +93,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
+          <SiGithub/>
           Go to My Github →
         </a>
       </footer>

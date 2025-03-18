@@ -14,6 +14,7 @@ I wanted to learn how to use React, and also wanted to build an interactive port
 
 React used to have a default template option, but it has moved away from that. Now it can either be used in snippets with your JavaScript code, or with a framework like Next.js. I decided on Next.js.
 
+
 # Useful Websites
 
 
@@ -21,6 +22,10 @@ React used to have a default template option, but it has moved away from that. N
 - [w3schools-Intro to Javascript](https://www.w3schools.com/js/js_intro.asp)
 - [Installing Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 - [Getting started with NEXT.js](https://nextjs.org/docs/app/getting-started/layouts-and-pages)
+
+# Starting Next.js projects
+
+Run npm run dev, or pnpm dev. You can install pnpm using npm install -g pnpm. Then create a new next.js project using npx create-next-app@latest -projectname-. 
 
 # Future Work
 
