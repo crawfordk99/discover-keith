@@ -26,9 +26,9 @@ export default function Hobbies() {
     // This is important because otherwise useEffect would keep activating every time the page renders
     return (
         <main>
-            {/* Display countdown */}
+            {/* Display countdown, after the : display actual content */}
             {!isReady ? ( <h1>Welcome to my hobbies... {count} </h1>
-            ) : {/* Dislay actual content*/} (
+            ) : (
             <section className = "max-w-sm mx-auto">
                 <div className = "max-w-sm mx-auto">
                     <ScrollableHtmlBox filePath={"/poems.html"}/>

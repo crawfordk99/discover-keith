@@ -7,7 +7,7 @@ I'm going to be building my portfolio site using JavaScript, React, and specfica
 I wanted to learn how to use React, and also wanted to build an interactive portfolio. JavaScript and React are perfect for adding interactivity to your website/app. I learned basic tailwind CSS as well (allows you to declare html elements with their style, instead of having to create a separate styles file).  
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/z0dG4ZyTE20)
 
 # Development Environment
 

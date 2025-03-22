@@ -16,7 +16,7 @@ import {
 // When exporting multiple components/functions, you can't specify an export default at the end
 // So instead just add export at the beginning of the component/function name line 
 // Then when importing you have to use the {} around the function/component you want
-export const YouTubeEmbed = ({ videoId}) => { // videoId must be a string
+export const YouTubeEmbed = ({ videoId }) => { // videoId must be a string
   return (
     <div className="relative w-full pb-[56.25%] h-0 flex justify-center">
       <iframe

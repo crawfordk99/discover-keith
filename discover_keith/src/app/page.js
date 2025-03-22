@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SiLinkedin, SiGithub } from "react-icons/si" // Import social media icons
+import { SiLinkedin, SiGithub } from "react-icons/si"; // Import social media icons
 
 export default function Home() {
   return (
