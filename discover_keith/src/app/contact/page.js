@@ -90,7 +90,7 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
               type="submit"
               className="w-full bg-primary hover:shadow-lg hover:opacity-90 text-background font-bold py-2 px-4 rounded"
             >
-              {isSending && <ClipLoader color="#000" size={10} />} &nbsp; Send
+              {isSending} &nbsp; Send
               Message
             </button>
       </form>

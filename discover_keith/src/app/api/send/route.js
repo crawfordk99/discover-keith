@@ -5,9 +5,10 @@ import { NextRequest, NextResponse } from "next/server";
 // This allows for visitors to my portfolio to send me emails directly
 // It's a third-party service called Resend
 
-const Resend = new Resend(process.env.RESEND_API_KEY);
+
 
 export async function POST(req) {
+    const Resend = new Resend(process.env.RESEND_API_KEY);
     const body = await req.json();
     // body of our request - to be sent from the Client-side in our form above
     const { message, email } = body;
