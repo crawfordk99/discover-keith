@@ -28,12 +28,12 @@ export async function POST(req) {
             react: EmailTemplate({ email, message }),
         });
         
-        if (error) {
+        if (error) { // Deals with errors from the api response
             return NextResponse.json({ error }, { status: 500 });
         }
         
-            return NextResponse.json(data);
-    } catch (error) {
+        return NextResponse.json(data);
+    } catch (error) { // Deals with run time errors
         return NextResponse.json({ error }, { status: 500 });
     }
     
