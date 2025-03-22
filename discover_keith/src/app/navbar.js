@@ -1,10 +1,18 @@
 'use client'
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "next/link"; 
 import { Menu, X} from 'lucide-react';
 
+// React hooks allow you to make your React components stateful
+// In the past they would have to make the component, and then extend it in a class
+// But now you can skip that part and just add state to your component,
+// by using useState from react
+// Reminder that in JavaScript () => {} is a lambda function
 const Navbar = () => {
+    // isOpen is a boolean variable controlling whether the navbar is open or not
+    // setIsOpen changes that isOpen value
+    // useState is the default value of isOpen
     const [isOpen, setIsOpen] = useState(false);
     
     return (
@@ -38,6 +46,4 @@ const Navbar = () => {
       </nav>
     );
 };
-  
 export default Navbar; // Must export to use in app
-

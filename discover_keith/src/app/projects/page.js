@@ -1,6 +1,7 @@
-import YouTubeEmbed from "../ytubeembed"; 
+import { YouTubeEmbed } from "../components"; 
 import ProjectDescription from "./projectdesc";
 
+// An array with a nested to hold my projects info in
 const projects = [
     {title : "Personal Stats Tracker App", description: "An app that helps keep track of your personal stats",
 link: "https://www.github.com/crawfordk99/personal-stats-tracker", skills: ["Flutter", "Dart", "Firebase", "Mobile App Development", "Database Management"]},
@@ -12,6 +13,7 @@ export default function Projects() {
     return (
         <main>
             <section className = "max-w-sm mx-auto">
+                {/* Leave the project description to a React component, and then call it */}
                 <ProjectDescription 
                 title = {projects[0].title}
                 description = {projects[0].description}
@@ -31,7 +33,7 @@ export default function Projects() {
                 link = {projects[1].link}
                 skills = {projects[1].skills}
                 />
-                <div className = "flex justify-center items-center min-h-screen">
+                <div >
                     <YouTubeEmbed videoId={"WA78GYcscP8"}/>
                 </div>
             </section>
