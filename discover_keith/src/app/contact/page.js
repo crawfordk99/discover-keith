@@ -3,8 +3,6 @@
 import { useState } from 'react';
 
 
-
-
 export default function Contact() {
 
 const [formData, setFormData] = useState({
@@ -64,7 +62,7 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
   return (
     <form
             onSubmit={handleSubmit}
-            className="items-center justify-center max-w-m mx-auto border-none p-0"
+            className="flex flex-center items-center justify-center max-w-s mx-auto border-none"
             data-aos="fade-down"
           >
             <input
@@ -73,7 +71,7 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
               placeholder="your-email@mail.com"
               value={formData.email}
               onChange={handleChange}
-              className="flex flex-center justify-center items-center text-background w-m p-2 mb-4 border border-gray-300 rounded"
+              className="flex flex-center justify-center items-center text-background w-m p-2 mb-4 border border-gray-300 rounded mx-auto"
               required
             />
             <textarea
@@ -83,7 +81,7 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
               placeholder="...type your message"
               value={formData.message}
               onChange={handleChange}
-              className="items-center justify-center text-background w-l p-2 mb-4 border border-gray-300 rounded"
+              className="items-center justify-center text-background w-l p-2 mb-4 border border-gray-300 rounded mx-auto"
               required
             />
             <button
