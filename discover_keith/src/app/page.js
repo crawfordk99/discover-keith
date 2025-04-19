@@ -26,9 +26,9 @@ export default function Home() {
         </div>
         <div>
           <p>
-            I'm a rising junior studying computer science with a minor in data science. While most
-            of my classwork has been in C# and Python, I've been exploring lots of different languages.
-            I'm currently working on a couple of app projects in Flutter/Dart. I'm most interested in 
+            I&apos;m a rising junior studying computer science with a minor in data science. While most
+            of my classwork has been in C# and Python, I&apos;ve been exploring lots of different languages.
+            I&apos;m currently working on a couple of app projects in Flutter/Dart. I&apos;m most interested in 
             data engineering, backends services, and database management. 
           </p>
         </div>
