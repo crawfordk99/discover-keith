@@ -1,7 +1,7 @@
 import { YouTubeEmbed } from "../components"; 
 import ProjectDescription from "./projectdesc";
 
-// An array with a nested to hold my projects info in
+// An array with nested dictionaries to hold my projects info in
 const projects = [
     {title : "Personal Stats Tracker App", description: "An app that helps keep track of your personal stats",
 link: "https://www.github.com/crawfordk99/personal-stats-tracker", skills: ["Flutter", "Dart", "Firebase", "Mobile App Development", "Database Management"]},
