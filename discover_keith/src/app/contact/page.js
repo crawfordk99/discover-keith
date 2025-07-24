@@ -60,38 +60,40 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
     }
   };
   return (
-    <form
-            onSubmit={handleSubmit}
-            className="flex flex-center items-center justify-center max-w-s mx-auto border-none"
-            data-aos="fade-down"
-          >
-            <input
-              name="email"
-              type="email"
-              placeholder="your-email@mail.com"
-              value={formData.email}
-              onChange={handleChange}
-              className="flex flex-center justify-center items-center text-background w-m p-2 mb-4 border border-gray-300 rounded mx-auto"
-              required
-            />
-            <textarea
-              name="message"
-              cols={30}
-              rows={5}
-              placeholder="...type your message"
-              value={formData.message}
-              onChange={handleChange}
-              className="items-center justify-center text-background w-l p-2 mb-4 border border-gray-300 rounded mx-auto"
-              required
-            />
-            <button
-              type="submit"
-              className="w-full bg-primary hover:shadow-lg hover:opacity-90 text-background font-bold py-2 px-4 rounded"
-            >
-              {isSending} &nbsp; Send
-              Message
-            </button>
-      </form>
+  <form 
+    onSubmit={handleSubmit} 
+    className="flex flex-col items-center justify-center max-w-md mx-auto" 
+    data-aos="fade-down"
+  >
+    <input 
+      name="email" 
+      type="email" 
+      placeholder="your-email@mail.com" 
+      value={formData.email} 
+      onChange={handleChange} 
+      className="w-full p-2 mb-4 border border-gray-300 rounded text-gray-800" 
+      required 
+    />
+    
+    <textarea 
+      name="message" 
+      cols={30} 
+      rows={5} 
+      placeholder="...type your message" 
+      value={formData.message} 
+      onChange={handleChange} 
+      className="w-full p-2 mb-4 border border-gray-300 rounded text-gray-800" 
+      required 
+    />
+    
+    <button 
+      type="submit" 
+      className="w-full bg-blue-600 hover:bg-blue-700 hover:shadow-lg text-white font-bold py-2 px-4 rounded disabled:opacity-50"
+      disabled={isSending}
+    >
+      {isSending ? 'Sending...' : 'Send Message'}
+    </button>
+  </form>
   );
 
 }
