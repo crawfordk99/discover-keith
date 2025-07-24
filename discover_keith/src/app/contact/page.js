@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Contact() {
@@ -25,7 +27,7 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
 
   //confirm email and message field are not empty
   if (!formData.email || !formData.message) {
-    showToast.info("Email and message are required fields");
+    showTast.info("Email and message are required fields");
     return;
   }
 
@@ -44,17 +46,17 @@ const handleSubmit = async (e) => { //: FormEvent<HTMLFormElement>
 
       // handle success
       if (response.ok) {
-        showToast.success("Email Sent Successfully!");
+        toast.success("Email Sent Successfully!");
         setFormData({
           email: "",
           message: "",
         })
       } else {
-        showToast.error("There was a problem sending email. Pls try again!");
+        toast.error("There was a problem sending email. Pls try again!");
       }
     } catch (error) {
       console.log("Error sending email:", error);
-      showToast.error("There was a problem sending email. Pls try again!");
+      toast.error("There was a problem sending email. Pls try again!");
     } finally {
       setIsSending(false);
     }
